@@ -163,33 +163,7 @@
     </footer>
     <script src="./scripts/theme-changer.js"></script>
     <script type="text/javascript" async src="//l.getsitecontrol.com/v7n9jdl4.js"></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHNN7ZX835"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QHNN7ZX835');
-</script>
-<script>
-  // Функция для отправки события в GA4
-  function trackDarkThemeButtonClick() {
-    gtag('event', 'dark_theme_button_click', {
-      'event_category': 'Theme Switch',
-      'event_label': 'Dark Theme',
-      'value': 1
-    });
-  }
-
-  // Находим все кнопки с классом .header__theme-button_type_dark
-  const darkThemeButtons = document.querySelectorAll('.header__theme-button_type_dark');
-
-  // Добавляем обработчик клика для каждой кнопки
-  darkThemeButtons.forEach(button => {
-    button.addEventListener('click', trackDarkThemeButtonClick);
-  });
-</script>
 
   </body>
 </html>
